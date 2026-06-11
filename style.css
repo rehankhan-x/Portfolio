@@ -1,0 +1,267 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    scroll-behavior: smooth;
+    
+}
+#navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    background-color:#121212;
+    box-shadow: 0 2px 5px rgba(126, 56, 56, 0.1); 
+    padding: 10px 20px;
+}
+.logo{
+    font-size: 20px;
+    font-weight: bold;
+    color:#FFD700;
+}
+#navbar ul{
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+#navbar a{oration: none;
+    color: hwb(187 18% 23%);
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+#navbar a:hover{
+    color: #FFD700;
+    border-bottom: 2px solid #FFD700;
+}
+button{
+    background-color: #FFD700;
+    color: #121212;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+#home{
+    background-color: #121212;
+    color: #FFD700;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+.left-div {
+    height: 70%;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+span{
+    color: #3d97b3;
+}
+p{
+    margin: 20px;
+    padding: 10px;
+
+}
+.social-icons{
+    display: flex;
+    gap: 20px
+}    
+.social-icons img {  
+    background-color: #ffffff;
+    gap: 30px;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+}
+.social-icons img:hover {
+    background-color: #000000;
+    transition: background-color 0.3s ease;
+}
+    
+.right-div{
+    
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+.right-div img{
+    height: 15rem;
+    width: 15rem;
+}
+#about{
+    background-color: #121212;
+    color: #FFD700;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    text color: skyblue;
+
+}
+#contact{
+    height: 100vh;
+    
+    background-color: #121212;
+    color: #FFD700;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+form{
+    border: 2px solid #FFD700;
+    padding: 4rem ;
+    border-radius: 10px;
+}
+
+form div{
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+input, textarea{
+    height: 2rem;
+    width: 20rem;
+    padding: 1rem;
+    border-radius: 5px;
+    border: none;
+    resize: none;
+}
+input:focus, textarea:focus{
+    outline: 2px solid #FFD700;
+}
+@media (max-width: 768px) {
+
+    /* Navbar */
+    #navbar{
+        flex-direction: column;
+        gap: 15px;
+        padding: 15px;
+        text-align: center;
+    }
+
+    /* Navbar Links */
+    #navbar ul{
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+    }
+
+    #navbar a{
+        display: block;
+    }
+
+    /* Home Section */
+    #home{
+        flex-direction: column-reverse;
+        height: auto;
+        padding: 40px 20px;
+        text-align: center;
+    }
+
+    /* Left Div */
+    .left-div{
+        width: 100%;
+        height: auto;
+        padding: 10px;
+    }
+
+    .left-div h1{
+        font-size: 2rem;
+    }
+
+    .left-div h3{
+        font-size: 1.2rem;
+    }
+
+    .left-div p{
+        margin: 10px 0;
+        padding: 5px;
+        line-height: 1.6;
+    }
+
+    /* Social Icons */
+    .social-icons{
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .social-icons img{
+        width: 35px;
+        height: 35px;
+    }
+
+    /* Right Div */
+    .right-div{
+        width: 100%;
+        height: auto;
+    }
+
+    .right-div img{
+        width: 10rem;
+        height: 10rem;
+    }
+
+    /* About Section */
+    #about{
+        height: auto;
+        padding: 40px 20px;
+        text-align: center;
+    }
+
+    #about h1{
+        margin-bottom: 20px;
+    }
+
+    #about p{
+        width: 100%;
+        margin: 0;
+        line-height: 1.8;
+    }
+
+    /* Contact Section */
+    #contact{
+        height: auto;
+        padding: 40px 20px;
+        text-align: center;
+    }
+
+    /* Form */
+    form{
+        width: 100%;
+        max-width: 350px;
+        padding: 2rem;
+    }
+
+    form div{
+        width: 100%;
+    }
+
+    /* Inputs and Textarea */
+    input,
+    textarea{
+        width: 100%;
+    }
+
+    textarea{
+        min-height: 100px;
+    }
+
+    /* Buttons */
+    button{
+        width: 100%;
+        padding: 10px;
+    }
+}
