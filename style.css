@@ -10,7 +10,7 @@
     display: flex;
     justify-content: space-between;
     align-items:center;
-    background-color:#121212;
+    background-color:var(--nav-color);
     box-shadow: 0 2px 5px rgba(126, 56, 56, 0.1); 
     padding: 10px 20px;
 }
@@ -34,16 +34,16 @@
     border-bottom: 2px solid #FFD700;
 }
 button{
-    background-color: #FFD700;
-    color: #121212;
+     background-color:var(--btn-bg);
+    color:var(--btn-text);
     border: none;
     padding: 5px 10px;
     cursor: pointer;
     border-radius: 5px;
 }
 #home{
-    background-color: #121212;
-    color: #FFD700;
+    background-color:var(--bg-color);
+    color:var(--text-color);
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -59,7 +59,7 @@ button{
     align-items: center;
 }
 span{
-    color: #3d97b3;
+  color:var(--primary-color);
 }
 p{
     margin: 20px;
@@ -95,8 +95,8 @@ p{
     width: 15rem;
 }
 #about{
-    background-color: #121212;
-    color: #FFD700;
+   background-color:var(--bg-color);
+    color:var(--text-color);
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -109,8 +109,8 @@ p{
 #contact{
     height: 100vh;
     
-    background-color: #121212;
-    color: #FFD700;
+    background-color:var(--bg-color);
+    color:var(--text-color);
     display: flex;
     flex-direction: column;
     justify-content: center;
